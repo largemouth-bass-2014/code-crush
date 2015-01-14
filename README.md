@@ -1,4 +1,6 @@
 code-crush
 ==========
 
-It's like ping-pong, but for learning code on the internet.
+Typing game with various levels of challenge.
+Type code snippets to protect your city from falling comets!
+Made with Phaser.io and full MEAN stack.
