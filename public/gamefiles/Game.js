@@ -305,17 +305,22 @@ var Game = {
     this.flyRight = true;
     this.flyMoth();
     mothTimer = this.game.time.events.loop(25500, this.flyMoth, this);
+    mothTimer.timer.start();
+    console.log(mothTimer);
   },
   flyMoth: function() {
+    console.log('fly moth')
     if (this.flyRight === true) {
       this.megaMothraXindex += 730;
       this.megaMothraYindex += 50;
+      console.log({ x: this.megaMothraXindex, y: this.megaMothraYindex});
       this.mothFlyTween = this.game.add.tween(this.megaMothra);
       this.mothFlyTween.to({x: this.megaMothraXindex, y: this.megaMothraYindex}, 25000).start();
       this.flyRight = false;
     } else {
       this.megaMothraXindex -= 730;
       this.megaMothraYindex += 50;
+      console.log({ x: this.megaMothraXindex, y: this.megaMothraYindex});
       this.mothFlyTween = this.game.add.tween(this.megaMothra);
       this.mothFlyTween.to({x: this.megaMothraXindex, y: this.megaMothraYindex}, 25000).start();
       this.flyRight = true;
