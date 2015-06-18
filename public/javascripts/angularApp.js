@@ -53,7 +53,7 @@ app.controller('UserCtrl', ['$scope', '$http', '$window', function($scope, $http
   $scope.getUser();
 }]);
 
-app.controller('ScoreCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
+app.controller('ScoreCtrl', ['$scope', '$http', '$window', '$animate', function($scope, $http, $window, $animate){
   (function(){
     return $http.get('/currentuser').success(function(data){
       $scope.user = data;
