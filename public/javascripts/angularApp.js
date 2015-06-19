@@ -53,7 +53,7 @@ app.controller('UserCtrl', ['$scope', '$http', '$window', function($scope, $http
   $scope.getUser();
 }]);
 
-app.controller('ScoreCtrl', ['$scope', '$http', '$window', '$animate', function($scope, $http, $window, $animate){
+app.controller('ScoreCtrl', ['$scope', '$http', '$window', function($scope, $http, $window ){
   (function(){
     return $http.get('/currentuser').success(function(data){
       $scope.user = data;
@@ -62,7 +62,7 @@ app.controller('ScoreCtrl', ['$scope', '$http', '$window', '$animate', function(
   })();
 }]);
 
-app.controller('HiScoreCtrl', ['$scope', '$http', '$animate', function($scope, $http, $animate){
+app.controller('HiScoreCtrl', ['$scope', '$http', function($scope, $http ){
   (function(){
     $http.get('/games/Codefall/scores/1').success(function(data){
       $scope.scores1 = data;
