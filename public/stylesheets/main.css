@@ -164,13 +164,23 @@ rgb(248, 121, 28) 3px;
   font-size: 1em;
 }
 
-.codefall-button {
+#codefall-button {
   width: 60%;
   margin: 2%;
 }
 
-.codefall-button-nav {
+#codefall-button:hover {
+  width: 62%;
+  margin: 2%;
+}
+
+#codefall-button-nav {
   width: 30%;
+  margin: 2%;
+}
+
+#codefall-button-nav:hover {
+  width: 31%;
   margin: 2%;
 }
 
