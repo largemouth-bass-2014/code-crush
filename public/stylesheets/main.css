@@ -13,6 +13,10 @@ body {
   padding-bottom: 5%;
 }
 
+.med-logo {
+  max-width: 50%
+}
+
 .brick {
   position: fixed;
   bottom: 0;
@@ -128,7 +132,7 @@ rgb(248, 121, 28) 3px;
 }
 
 .profile-info {
-  width: 49%;
+  width: 48%;
   margin-left: 1%;
   float: right;
   background: white;
@@ -164,14 +168,28 @@ rgb(248, 121, 28) 3px;
   font-size: 1em;
 }
 
-.codefall-button {
+#codefall-button {
   width: 60%;
   margin: 2%;
+  opacity: 0.9
 }
 
-.codefall-button-nav {
+#codefall-button:hover {
+  width: 62%;
+  margin: 2%;
+  opacity: 1;
+}
+
+#codefall-button-nav {
   width: 30%;
   margin: 2%;
+  opacity: 0.9;
+}
+
+#codefall-button-nav:hover {
+  width: 31%;
+  margin: 2%;
+  opacity: 1;
 }
 
 .game-selector {
@@ -195,4 +213,98 @@ rgb(248, 121, 28) 3px;
   font-size: 1.4em;
   margin-top: 3%;
 }
+
+#score-title {
+  width: 50% ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+/*ANIMATIONS*/
+
+.slideRight{
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+}
+
+.slideLeft{
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+}
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
 
