@@ -167,21 +167,25 @@ rgb(248, 121, 28) 3px;
 #codefall-button {
   width: 60%;
   margin: 2%;
+  opacity: 0.9
 }
 
 #codefall-button:hover {
   width: 62%;
   margin: 2%;
+  opacity: 1;
 }
 
 #codefall-button-nav {
   width: 30%;
   margin: 2%;
+  opacity: 0.9;
 }
 
 #codefall-button-nav:hover {
   width: 31%;
   margin: 2%;
+  opacity: 1;
 }
 
 .game-selector {
