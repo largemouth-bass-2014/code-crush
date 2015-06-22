@@ -13,6 +13,10 @@ body {
   padding-bottom: 5%;
 }
 
+.med-logo {
+  max-width: 50%
+}
+
 .brick {
   position: fixed;
   bottom: 0;
@@ -208,6 +212,12 @@ rgb(248, 121, 28) 3px;
 .login-text {
   font-size: 1.4em;
   margin-top: 3%;
+}
+
+#score-title {
+  width: 50% ;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 /*ANIMATIONS*/
